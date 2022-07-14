@@ -1,0 +1,40 @@
+{% extends 'core/base_formulario.html' %}
+{% block contenido%}
+{% load crispy_forms_tags %}
+{% load static %}
+
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-3">
+        <div class="card ">
+            <form action="" class="" method="post" >
+                <br>
+                <center><h2>Ingreso al sistema</h2></center>
+                <br>
+
+                {% csrf_token %}
+                {{ form | crispy }}
+                <br>
+                <a href="{% url 'home'%}">ir al home </a>
+                <br>
+                <br>
+                <div class="d-flex justify-content-center">
+                    
+                    
+                    <input type="submit" value="ingresar" class="btn btn-success">
+                    <a href=""></a>
+              
+                </div>
+                <br>
+            
+            </form>
+            
+        </div>
+    </div>    
+    <br>
+</div>
+<br>        
+    
+{% endblock %}
+
+
+

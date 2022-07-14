@@ -1,0 +1,26 @@
+.usuario{
+    padding: 10px;
+    padding-right: 440px;
+    padding-left: 10px;
+}
+.form-user{
+    display: flex;
+    padding: 10px;
+}
+
+@media (max-width:1397px){
+    .usuario{
+        padding: 10px;
+        padding-right: 560px;
+        display: flex;
+    }
+
+}
+
+@media (max-width:991px){
+    .usuario{
+        padding: 10px;
+
+    }
+
+}

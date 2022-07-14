@@ -1,0 +1,125 @@
+
+/* /* general  */*/
+body{
+    background-color: rgb(253, 253, 253);
+    
+
+}
+header{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.726);
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-right: 10px;
+}
+nav a:hover{
+    color: gray;
+}
+.link{
+    justify-content: left;
+    margin-right: 300px;  
+    font-weight: 600;
+}
+.logo img{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 100px;
+    margin-right: 10px
+}
+.espacio{
+    padding: 10px;
+}
+
+
+
+#border1{
+    border-radius: 10px;
+    
+}
+footer{
+    background-color: black;
+   
+}
+.slide img{
+    border-radius: 10px;
+}
+#p2{
+    padding-top: 10px;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+.fo1 img{
+    
+    display: flex;
+    margin: auto;
+    width: 30%;
+}
+
+.fo2 img{
+    display: flex;
+    margin: auto;
+    width: 50%;
+
+}
+
+.fo1 h3{
+    text-align: center;
+}
+.fo2 h3{
+    text-align: center;
+}
+/* /* API clima  */
+#caja_clima h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    padding-left: 5px;
+    color: aliceblue;
+    font-size: 30px;
+}
+#caja_clima p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    color: aliceblue;
+    font-size: 20px;
+}
+#caja_clima{
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 15px;
+    padding-left: 5px;
+}
+
+
+label{
+    display:inline-block;
+    vertical-align:middle;
+    text-align: center;  
+}
+
+.card{
+  width:50%;
+  text-align: center;
+  justify-content: center;
+  background-color: #f5f2f2;;
+  border-color: #c9cbcd;;
+  border-radius: 3%;
+  display: flex;
+}
+    
+
+.card textarea{
+    border-color: #b8b8bc;   
+}
+   
+.card input{
+    border-color: #fbfbfd;
+}
+

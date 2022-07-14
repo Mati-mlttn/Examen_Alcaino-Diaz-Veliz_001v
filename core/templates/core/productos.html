@@ -1,0 +1,99 @@
+{% extends 'core/base.html' %}
+{% block contenido%}
+{% load static %}
+
+<!-- #region -->
+<h1 id="move1">Nuestros productos</h1>
+
+<div >
+
+  <p>En PETSHOP disponemos de las mejores marcas de alimento para tus mascotas  que aportan una nutrición balanceada, saludable y completa, encontraras todo lo que tus mascotas necesitans. </p>
+  <hr>
+</div>
+
+<!-- #Card inicio -->
+
+<div class="container">
+ 
+  {% load humanize%}
+  <div class="container_cards" >
+    <!-- Producto 1-->
+    {% for p in productos  %}
+    <div>
+      <div class="card" style="width: 18rem;">
+        {% if p.imagen %}
+        <img src="{{ p.imagen.url}}" class="card-img-top" style="padding: 20px; height: 17rem; width: 17rem;" data-bs-target="#staticBackdrop1" type="button"  data-bs-toggle="modal" alt="...">
+
+        {% endif %}
+        <div class="card-body">
+          <h5 class="card-title">{{ p.marca}}</h5>
+          <p class="card-text">{{ p.nombre}}</p>
+          <h5 class="card-title2">${{ p.precio | intcomma}}</h5>
+          <a class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#mensaje1" >Añadir al carrito</a>
+   
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">{{ p.marca }} {{ p.nombre }}</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">{{ p.descripcion}}
+              
+                  <div>
+
+                    <img src="{{ p.imagen.url}}" class="card-img-top" style=" padding: 15px; height: 25rem; width: 25rem;" alt="...">
+                    <h5 class="card-title2" style="padding: 10px;">${{ p.precio | intcomma}}</h5>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mensaje1">Añadir al carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Modal PROXIMAMENTE -->
+          <div class="modal fade" id="mensaje1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="staticBackdropLabel">PROXIMAMENTE..</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <img src="{% static 'core/img/sitio.png' %}" class="card-img-top" style=" padding: 15px; height: 25rem; width: 25rem;" alt="...">
+                    <h5 class="card-title2" style="padding: 10px;">  PRONTO PODRAS DISFRUTAR DE LAS MEJORES OFERTAS </h5>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
+      
+
+      
+    </div>
+    
+    {% endfor %}
+  
+    
+    
+    <!-- Final Productos -->
+  </div>
+
+</div>
+
+  <br>
+
+
+{% endblock%}  

@@ -1,0 +1,134 @@
+{% extends 'core/base.html' %}
+{% block contenido %}
+          <!-- #inicio formulario -->
+
+          <form class="needs-validation" method="" action="success.html" novalidate>
+            <h1 id="quienes_size">Formulario de adopcion </h1>
+            <div class="container" id="div_form3">
+              <div class="usuario">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                  <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <!--nombre y apellido-->
+              <div class="container form_groups">
+                <div class="row">
+                  <div class="col-xxl-4 col-md-6 col-sm-6">
+                    <label for="name" class="form-label">Nombres *</label>
+                    <div class="formularios_input">
+                      <input type="text" class="form-control" placeholder="Nombres" id="name" name="nombres" required>
+                      <div class="valid-feedback">
+                        Correcto
+                      </div>
+                        <div class="invalid-feedback">
+                          Por favor complete el campo
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-4 col-md-6 col-sm-6">
+                    <label for="lastname" class="form-label">Apellidos *</label>
+                    <div class="formularios_input">
+                      <input type="text" class="form-control" placeholder="Apellidos" id="lastname" name="apellidos" required>
+                      <div class="valid-feedback">
+                        Correcto
+                      </div>
+                        <div class="invalid-feedback">
+                          Por favor complete el campo
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <br>
+              <!--numero-->
+              <div class="container form_groups">
+                <div class="row">
+                  <div class="col-xxl-4 col-lg-4 col-sm-9">
+                    <label for="number" class="form-label">Número *</label>
+                    <div class="formularios_input">
+                      <input type="text" class="form-control" placeholder="+56987654321" id="number" name="numero" required>
+                      <div class="valid-feedback">
+                        Correcto
+                      </div>
+                        <div class="invalid-feedback">
+                          Por favor complete el campo
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <br>
+              <!--correo-->
+              <div class="container form_groups">
+                <div class="row">
+                  <div class="col-xxl-4 col-lg-4 col-sm-9">
+                    <label for="e-mail" class="form-label">Ingrese su correo *</label>
+                    <div class="formularios_input">
+                      <input type="email" class="form-control" placeholder="@" id="e-mail" name="correo" required> 
+                      <div class="valid-feedback">
+                        Correcto
+                      </div>
+                        <div class="invalid-feedback">
+                          Por favor complete el campo
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <br>
+              <!--dudas-->
+              <div class="container">
+                <div class="row">
+                  <div class="col-xxl-6">
+                    <label for="duda" class="form-label">Por que decidio adoptar una mascota con nosotros *</label>
+                    <div>
+                      <textarea class="form-control" name="message" id="duda" cols="10" rows="10" required></textarea>
+                      <div class="valid-feedback">
+                        Correcto
+                      </div>
+                        <div class="invalid-feedback">
+                          Por favor complete el campo
+                        </div>
+                    </div>
+
+                  </div>
+                  
+                  
+                </div>
+              </div>
+              <br>
+              <!--checkbox-->
+              <div class="container">
+                <div class="row">
+                  <div class="col" id="newsletter">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="check_form3" name="newsletter">
+                      <label for="check_form3" class="form-label">Quiere que le enviemos novedades de nuestros porductos o mascota en adopcion</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <!--Mensaje de error-->
+
+              <!--boton-->
+              <div class="container">
+                <div class="col btn_enviar" id="btn_enviar">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                  
+                </div>
+              </div>
+            </div>
+          </form>
+
+
+          <!-- fin formulario -->
+       
+      <!-- #div container -->
+      </div>
+     
+{% endblock %}

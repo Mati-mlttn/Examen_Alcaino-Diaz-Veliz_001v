@@ -1,0 +1,32 @@
+/* /* perfiles  */
+.card img{
+    border-radius: 150px;
+    height: 200px;
+    width: 200px;
+    padding-top: 10px;
+
+}
+.card{
+    align-items: center;
+}
+#espacio{
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+.redes{
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    padding-right: 10px;
+}
+.redes:hover{
+    color: blueviolet;
+}
+#titulo_equipo{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,185 @@
+{% extends 'core/base.html' %}
+{% block contenido%}
+ <!-- #Carrosel inicio-->
+ {% load static %}
+ <div class="">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'core/img/banera_marka-dispensador_1.jpg' %}" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'core/img/baner_marka_purina_1.jpg' %}" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'core/img/baner_marka_2.jpg' %}" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<hr>
+<!-- Parrafos -->
+<div>
+    <p id="p2">En PET SHOP encontraras todos los productos que estas buscando desde el alimento hasta herramientas que ayudaran a tu mascota en el dia a dia. 
+      en PET SHOP contamos con despacho a domicilio en 24 horas y con nuestro servicio express tendras tu compra en tan solo 2 horas, nuestro compromiso esta en brindarte 
+      una atencion de calidad para que tu experiecia sea la mejor y puedas disfrutas a tus mascotas al maximo con productos de calidad y con el respaldo de una gran empresa.
+    </p>
+ <hr>
+</div>
+
+<div class="fo1">
+
+  <img src="{% static 'core/img/EAT.png' %}"    />
+  <H3>LA ALIMENTACION</H3>
+
+  <p id="p2">Es muy importante para mantener a nuestro a animales de compañía que ingieran una dieta equilibrada que satisfaga sus necesidades energéticas y proporcione los nutrientes adecuados.
+    Lo ideal, tanto para perros como para gatos, es que consuman alimento seco , adaptado a cada etapa de crecimiento y a cada necesidad. Nunca deben consumir alimentos crudos ya que estos podrían ser fuente de enfermedades parasitarias.
+    Es conveniente prevenir la obesidad. Un animal normal debe tener las costillas palpables y forma de reloj de arena visto desde arriba. Actualmente existen numerosas dietas comerciales en el mercado que pueden ayudarnos a evitar la obesidad. 
+    En periodos de gestación o lactancia se debe proporcionar a las perras y gatas un alimento comercial de gama alta sobre todo durante las tres o cuatro últimas semanas de gestación y durante toda la lactancia. Se debe igualmente incrementar la ración sobre todo durante la lactancia a razón de 1,5 veces la cantidad necesaria para el mantenimiento normal durante la primera semana , 2 veces más en la segunda semana y hasta 3 veces más en la tercera semana de lactación.</p>
+    <hr>
+</div>
+
+<div class="fo1">
+  <h3>IMPORTANTE!</h3>
+  <p id="p2">Sabian que una de cada tres mascotas se pierden en algún momento de su vida. Menos del 2% de los gatos perdidos y sólo del 15 al 20% de los perros perdidos logran volver con sus familias. para evitar una posible perdida en tu familia acude lo antes posible a un veterinaio y coloca un chip a tu mascota.</p>
+  <hr>
+</div>
+
+<!-- #Card inicio -->
+<div  class="container_cards" >
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'core/img/productos/arnes.jpg' %}" class="card-img-top" style="padding: 20px; height: 17rem; width: 17rem;">
+    <div class="card-body">
+      <h5 class="card-title">MY PET® Arnes</h5>
+      <p class="card-text">Arnes Talla L Rosado my Contorno del Torax </p>
+      <h5 class="card-title2">$13.990</h5>
+      <a href="{% url 'productos'%}" class="btn btn-success">Lo quiero</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'core/img/productos/anti parasitos.webp' %}" class="card-img-top" style="padding: 20px; height: 17rem; width: 17rem;">
+    <div class="card-body">
+      <h5 class="card-title">Doguican Collar</h5>
+      <p class="card-text">Collar anti pulga para perros</p>
+      <h5 class="card-title2">$5.490</h5>
+      <a href="{% url 'productos'%}" class="btn btn-success">Lo quiero</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'core/img/productos/Caja de arena.jpg' %}" class="card-img-top" style="padding: 20px; height: 17rem; width: 17rem;">
+    <div class="card-body">
+      <h5 class="card-title">Baño para gato.</h5>
+      <p class="card-text"> Baño sanitario privado para gatos.</p>
+      <h5 class="card-title2">$39.000</h5>
+      <a href="{% url 'productos'%}" class="btn btn-success">Lo quiero</a>
+    </div>
+  </div>
+  
+
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'core/img/productos/camisa azul.jpg' %}" class="card-img-top" style="padding: 20px; height: 17rem; width: 17rem;">
+    <div class="card-body">
+      <h5 class="card-title">Camisa azul</h5>
+      <p class="card-text">camisa color azul para gatos 1 año o mas.</p>
+      <h5 class="card-title2">$4.990</h5>
+      <a href="{% url 'productos'%}" class="btn btn-success">Lo quiero</a>
+    </div>
+  </div>
+  
+</div>
+
+<div>
+  <div  class="container_cards" >
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'core/img/productos/comida blanda perro.png' %}" class="card-img-top" style="padding: 20px; height: 17rem; width: 17rem;">
+      <div class="card-body">
+        <h5 class="card-title">Puruna dog chou 100g</h5>
+        <p class="card-text">comida para perro tipo carne cont 100g.</p>
+        <div class="move2">
+          <h5 class="card-title2">$600</h5>
+          <a href="{% url 'productos'%}" class="btn btn-success">Lo quiero</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'core/img/productos/comida perro 2.webp ' %}" class="card-img-top" style="padding: 20px; height: 17rem; width: 17rem;">
+      <div class="card-body">
+        <h5 class="card-title">Hill’s Science Diet </h5>
+        <p class="card-text">Comida para perro Hill’s cont 3kg.</p>
+        <h5 class="card-title2">$52.890</h5>
+        <a href="{% url 'productos'%}" class="btn btn-success">Lo quiero</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'core/img/productos/DispensadorNegro.jpg' %}" class="card-img-top" style="padding: 20px; height: 17rem; width: 17rem;">
+      <div class="card-body">
+        <h5 class="card-title">PETLIBRO Alimentador</h5>
+        <p class="card-text">Alimentador automático para gatos</p>
+        <h5 class="card-title2">$79.900</h5>
+        <a href="{% url 'productos'%}" class="btn btn-success">Lo quiero</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="{% static 'core/img/productos/comida perro.webp' %}" class="card-img-top" style="padding: 20px; height: 17rem; width: 17rem;">
+      <div class="card-body">
+        <h5 class="card-title">PURINA® PRO PLAN</h5>
+        <p class="card-text">Purina pro plan para raza pequeña 3kg.</p>
+        <h5 class="card-title2">$22,100</h5>
+        <a href="{% url 'productos'%}" class="btn btn-success">Lo quiero</a>
+      </div>
+    </div>
+</div>
+
+<!-- #Card Final -->
+</div>
+<BR></BR>
+<hr>
+
+<div class="fo2">
+
+
+<img src="{% static 'core/img/PERROFELIZ.png' %}"    />
+<H3>LOS BENEFICIOS DE PASEAR A TU PERRO</H3>
+
+<p id="p2">
+  
+  La actividad física ejercita sus patas y torso, quema calorías y lo mantiene en buena condición física.
+  Ayuda a liberar estrés y tensión que se pueden acumular por falta de actividad o largos periodos de ausencia de su dueño o bien a la naturaleza de cada raza.
+  El perro aprende a ver a su dueño como figura de autoridad. Llevar una correa al cuello o al torso ayuda a establecer límites.
+  Se refuerzan los vínculos entre perro y dueño, ya que es un momento único que ambos comparten y se asocia con esparcimiento y desestrés.
+  Es pieza clave para su socialización: le ayuda a familiarizarse con su entorno, con parques cercanos y entablar contacto con otros perros.
+  Ayuda a que tu casa esté más limpia, ya que podrá hacer sus necesidades afuera y bajo tu vigilancia. Recuerda llevar una bolsa o recogedor especial, ya que no se permite dejar sus excrementos en parques o vía pública..
+  También ayuda a los dueños al hacerlos más activos y dispuestos al ejercicio. Según estudios de la Universidad George Washington, quienes no tienen perros o no pasean con ellos tienen el triple de posibilidades de contraer diabetes.
+  Recuerda a la vez que los paseos no sean muy prolongados. Pueden ser varios al día con duración de 20 minutos. Evita el sol directo y procura pasear en la mañana o al atardecer y llevar agua para ambos.</p>
+<hr>
+</div>
+
+
+</div>
+
+
+
+
+{% endblock%}
+

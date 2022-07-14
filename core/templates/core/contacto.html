@@ -1,0 +1,139 @@
+{% extends 'core/base.html' %}
+{% block contenido%}
+{% load crispy_forms_tags %}
+{% load static %}
+          <!-- #inicio formulario -->
+          
+          <form class="needs-validation" method="post" action="" novalidate>
+            <h1 id="quienes_size">Tienes dudas escribenos</h1>
+            <div class="container" id="div_form3">
+              <!--nombre y apellido-->
+              <div class="container form_groups">
+                <div class="row">
+                  <div class="col-xxl-4 col-md-6 col-sm-6">
+                    <label for="name" class="form-label">Nombres *</label>
+                    <div class="formularios_input">
+                      {% csrf_token %}
+                      {{form.nombre}}
+                      <div class="valid-feedback">
+                        Correcto
+                      </div>
+                        <div class="invalid-feedback">
+                          Por favor complete el campo
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-4 col-md-6 col-sm-6">
+                    <label for="lastname" class="form-label">Apellidos *</label>
+                    <div class="formularios_input">
+                      {% csrf_token %}
+                      {{form.apellido}}
+                      <div class="valid-feedback">
+                        Correcto
+                      </div>
+                        <div class="invalid-feedback">
+                          Por favor complete el campo
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <br>
+              <!--numero-->
+              <div class="container form_groups">
+                <div class="row">
+                  <div class="col-xxl-4 col-lg-4 col-sm-9">
+                    <label for="number" class="form-label">Número *</label>
+                    <div class="formularios_input">
+                      {% csrf_token %}
+                      {{ form.telefono}}
+                      <div class="valid-feedback">
+                        Correcto
+                      </div>
+                        <div class="invalid-feedback">
+                          Por favor complete el campo
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <br>
+              <!--correo-->
+              <div class="container form_groups">
+                <div class="row">
+                  <div class="col-xxl-4 col-lg-4 col-sm-9">
+                    <label for="e-mail" class="form-label">Correo *</label>
+                    <div class="formularios_input">
+                      {% csrf_token %}
+                      {{ form.correo}}
+                      <div class="valid-feedback">
+                        Correcto
+                      </div>
+                        <div class="invalid-feedback">
+                          Por favor complete el campo
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <br>
+              <!--dudas-->
+              <div class="container">
+                <div class="row">
+                  <div class="col-xxl-6">
+                    <label for="duda" class="form-label">Dudas</label>
+                    <div>
+                      {% csrf_token %}
+                      {{ form.mensaje}}
+                      <div class="valid-feedback">
+                        Correcto
+                      </div>
+                        <div class="invalid-feedback">
+                          Por favor complete el campo
+                        </div>
+                    </div>
+
+                  </div>
+                  
+                  
+                </div>
+              </div>
+              <br>
+              <!--checkbox-->
+              <div class="container">
+                <div class="row">
+                  <div class="col" id="newsletter">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="check_form3" name="newsletter">
+                      <label for="check_form3" class="form-label">Suscribete a nuestro NewsLetter</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <!--Mensaje de error-->
+
+              <!--boton-->
+              <div class="container">
+                <div class="col btn_enviar" id="btn_enviar">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                  
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <!-- fin formulario -->
+       
+      <!-- #div container -->
+      </div>
+     
+        
+        
+
+
+{% endblock %}
+
