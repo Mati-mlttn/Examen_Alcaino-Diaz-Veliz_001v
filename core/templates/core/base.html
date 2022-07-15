@@ -70,7 +70,7 @@
                   <a class="nav-link" href="{% url 'productos'%}">Productos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="{% url 'adopcion'%}">Adopcion</a>
+                  <a class="nav-link disabled" href="{% url 'adopcion'%}">Adopcion</a>
                 </li>
               </ul>
               <form class="d-flex">
@@ -78,7 +78,12 @@
                 " aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Buscar</button>
               </form>
-              <br>
+              <!-- #API de clima -->
+              <div id="caja_clima">
+                <h1 id="temperatura_valor"></h1>
+                <p>°C</p>
+                <img id="iconoAnimado" src="" alt="">
+              </div>
              
             </div>
           </div>
