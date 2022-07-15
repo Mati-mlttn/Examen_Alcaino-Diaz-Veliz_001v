@@ -13,11 +13,11 @@ header{
 }
 nav a{
   
-    color: rgb(100, 5, 5);
+    color: rgb(255, 255, 255);
   
 }
 nav a:hover{
-    color: rgb(208, 30, 30);
+    color: rgb(116, 72, 72);
 }
 .link{
     justify-content: left;
